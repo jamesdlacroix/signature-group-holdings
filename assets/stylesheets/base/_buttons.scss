@@ -1,0 +1,3 @@
+.btn {
+  @include btn($dark-grey, $light-grey);
+}

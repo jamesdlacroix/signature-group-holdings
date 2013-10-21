@@ -1,0 +1,107 @@
+/*
+ * Button style
+ */
+@mixin btn-style($bg, $color, $border, $multiplier: 1) {
+  $delta: 3 * $multiplier;
+
+  border: none;
+  @if $border != none {
+    border-bottom: 1px solid $border;
+  }
+  border-radius: 3px;
+  box-shadow: none;
+  background: $bg;
+  color: $color;
+
+  &:visited {
+    background: $bg;
+    color: $color;
+  }
+
+  &:hover {
+    @if $border != none {
+      border-color: lighten($border, 5);
+    }
+    background: lighten($bg, $delta);
+    color: $color;
+  }
+
+  &:active {
+    border: none;
+    @if $border != none {
+      border-top: 1px solid $border;
+    }
+    background: darken($bg, $delta);
+    color: $color;
+  }
+
+  &:focus {
+    color: $color;
+  }
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:active {
+    @include opacity(0.5);
+    border: none;
+    @if $border != none {
+      border-bottom: 1px solid $border;
+    }
+    background: $bg;
+  }
+
+} // @mixin btn-style
+
+/*
+ * Button
+ */
+@mixin btn($bg: #e3e3e3, $color: #999, $border: #aaa, $multiplier: 1) {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0.65em 1.25em;
+  margin: 0.25em 0;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  @include user-select(none);
+  @include transition(none);
+  @include btn-style($bg, $color, $border, $multiplier);
+
+  &.large {
+    font-size: 1.25em;
+  }
+
+  &.x-large {
+    font-size: 1.5em;
+  }
+
+  &.small {
+    font-size: 0.875em;
+  }
+
+  &.mini {
+    font-size: 0.75em;
+  }
+
+  i[data-icon] {
+    position: relative;
+    top: 2px;
+  }
+
+  &.icon-left {
+    [data-icon] {
+      margin-right: 0.5em;
+    }
+  }
+
+  &.icon-right {
+    [data-icon] {
+      margin-left: 0.5em;
+    }
+  }
+
+  @content;
+
+} // @mixin btn

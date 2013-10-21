@@ -1,0 +1,36 @@
+// Basic Elements
+body {
+  background: $white;
+  font-family: $typeface-serif;
+  text-shadow: 1px 1px 1px transparent;
+}
+
+a {
+  @include transition(all 0.1s linear);
+}
+
+p, a, h1, h2, h3, h4, h5, label {
+  font-family: inherit;
+}
+
+h1 {
+  font-family: $typeface-sans;
+  text-transform: uppercase;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+hr {}

@@ -1,0 +1,47 @@
+#header {
+  padding: 0.5em 0;
+  background: $black;
+
+  .header--logo {
+    float: left;
+    img { height: 4em; }
+  }
+
+  nav {
+    float: right;
+    padding: 0.5em 0;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 1em;
+    &:first-child { margin-left: 0; }
+  }
+
+  a:hover {
+    color: $blue;
+  }
+
+  a:active {
+    color: darken($blue, 15%);
+  }
+
+  .header--social {
+    color: $grey;
+    font-size: 1.25em;
+  }
+
+  .header--nav {
+    color: $white;
+    font-family: $typeface-sans;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+} // #header

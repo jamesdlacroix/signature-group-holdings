@@ -1,0 +1,28 @@
+.s-intro {
+  padding: 10em 0;
+  background-image: image-url("bg1.jpg");
+
+  .intro--statement-wrap {
+    border: 1em solid rgba($dark-blue, 0.65);
+  }
+
+  .intro--statement {
+    padding: 4em;
+    background: rgba($blue, 0.65);
+  }
+
+  h3 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .intro--icon {
+    position: absolute;
+    bottom: 4em;
+    width: 100%;
+    text-align: center;
+  }
+
+} // .s-intro

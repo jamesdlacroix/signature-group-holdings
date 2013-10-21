@@ -1,0 +1,28 @@
+.m-section {
+  position: relative;
+  overflow-y: hidden;
+  background: $dark-grey no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: $black;
+
+  h1 {
+    color: lighten($grey, 15);
+  }
+
+} // .m-section
+
+.m-section-content {
+  padding: 3em;
+  background: $white;
+  text-align: center;
+
+  a {
+    color: $light-grey;
+  }
+
+} // .m-section-content
+
+.m-section-padding {
+  padding: 0 0 35em 0;
+} // .m-section-padding

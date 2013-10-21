@@ -1,0 +1,52 @@
+#footer.footer {
+  padding: 3em 0;
+  color: $grey;
+  text-align: center;
+
+  .footer--newsletter {
+    text-align: center;
+
+    a {
+      font-family: $typeface-sans;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer--input {
+    display: inline-block;
+    width: 20em;
+    font-size: 1em;
+    font-family: $typeface-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+
+  nav {
+    margin: auto;
+    font-family: $typeface-sans;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 1em;
+    &:first-child { margin-left: 0; }
+  }
+
+  a:hover {
+    color: $blue;
+  }
+
+  a:active {
+    color: darken($blue, 15%);
+  }
+
+}

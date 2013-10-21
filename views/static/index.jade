@@ -1,0 +1,40 @@
+extends ../layout/app
+
+block content
+
+  section#intro.m-section.s-intro
+    .l-constrained-medium
+      .intro--statement-wrap
+        .intro--statement
+          h3 Signature Group Holdings, Inc. is a publicly traded company being built for the sole purpose of enhanced shareholder value.
+    .intro--icon
+      a.m-icon-effect(href="#description")
+        +icon("3b2")
+
+  section#description.m-section.m-section-padding.s-description
+    .m-section-content
+      .l-constrained-medium
+        h1 Who We Are
+        p We are a publicly traded company being built for the sole purpose of enhanced shareholder value. We have a strong and liquid balance sheet, and our employees are talented and dedicated. The financial goals of Signature Group Holdings are to achieve dramatically higher revenues and bottom line profit. We expect our growth in the next year to result primarily from closing accretive acquisitions. In the long run we will grow our business organically in line with a well thought out strategy.
+        a.m-icon-effect(href="#latest-news")
+            +icon("3b2")
+
+  section#latest-news.m-section.m-section-padding.s-latest-news
+    .m-section-content
+      .l-constrained-medium
+        h1 Latest News
+
+        article
+          time 08/01/13
+          h2
+            a(href="#") Signature Group Holdings, Inc. Reports Second Quarter 2013 Results
+        article
+          time 07/18/13
+          h2
+            a(href="#") Signature Group Holdings Announces 2013 Annual Meeting Results
+        article
+          time 06/05/13
+          h2
+            a(href="#") Signature Group Holdings Announces Settlement Agreement with New Signature LLC
+
+        a.latest-news--more(href="#") Read More News
