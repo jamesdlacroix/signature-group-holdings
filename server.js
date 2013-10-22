@@ -1,5 +1,5 @@
 var cluster = require('cluster')
-  , cores   = process.env.CPU_CORES || 4
+  , cores   = process.env.CPU_CORES || 1
   ;
 
 if (cluster.isMaster && !module.parent) {
@@ -15,10 +15,6 @@ if (cluster.isMaster && !module.parent) {
   var express  = require('express')
     , http     = require('http')
     , path     = require('path')
-    // , util     = require('util')
-    // , moment   = require('moment')
-    // , rack     = require('asset-rack')
-    // , mongoose = require('mongoose');
     ;
 
   var app = module.exports = express();
@@ -38,7 +34,7 @@ if (cluster.isMaster && !module.parent) {
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.cookieParser());
-  app.use(express.cookieSession({ secret: '_nodejs_blueprint_b2685bd0cb02e1049a903e3359c3903e3bbe' }));
+  app.use(express.cookieSession({ secret: '_sig_group_b2685bd0cb02e1023few31j3359c3903e3bbe' }));
 
   // csrf - unless testing
   if ('test' !== app.get('env')) {
@@ -53,16 +49,6 @@ if (cluster.isMaster && !module.parent) {
   // include any custom middleware before this app.router
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
-
-  // mongoose
-  // app.db = mongoose;
-  // app.db.connect(app.get('mongodb-uri'));
-
-  // models
-  // require('./config/models')(app, mongoose);
-
-  // services
-  // app.set('Service', require('./lib/services/service'));
 
   // global helpers
   require('./lib/helpers')(app);
