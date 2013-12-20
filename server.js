@@ -47,8 +47,8 @@ if (cluster.isMaster && !module.parent) {
   }
 
   // include any custom middleware before this app.router
-  app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  app.use(app.router);
 
   // global helpers
   require('./lib/helpers')(app);

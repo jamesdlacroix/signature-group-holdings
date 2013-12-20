@@ -1,0 +1,13 @@
+.m-sidebar-nav {
+  @include unstyled-list;
+  padding: 0;
+  font-family: $typeface-sans;
+  font-size: 1.25em;
+  text-transform: uppercase;
+
+  li a{
+    display: block;
+    border-bottom: 1px solid $light-grey;
+  }
+
+} // .m-sidebar-nav

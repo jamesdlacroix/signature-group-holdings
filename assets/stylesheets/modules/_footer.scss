@@ -1,5 +1,6 @@
-#footer.footer {
+.m-footer {
   padding: 3em 0;
+  border-top: 2px solid $light-grey;
   color: $grey;
   text-align: center;
 
@@ -15,23 +16,26 @@
   .footer--input {
     display: inline-block;
     width: 20em;
+    background: $white;
     font-size: 1em;
     font-family: $typeface-serif;
     font-weight: bold;
     font-style: italic;
   }
 
+  a.btn {
+    color: $white;
+  }
+
 
   nav {
-    margin: auto;
+    @include unstyled-list;
     font-family: $typeface-sans;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   ul {
-    margin: 0;
-    list-style: none;
     text-align: center;
   }
 

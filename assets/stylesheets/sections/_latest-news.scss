@@ -24,14 +24,14 @@
   .latest-news--more {
     display: inline-block;
     margin-top: 2em;
+    border-bottom: 1px solid;
     color: $orange;
     font-size: 1em;
     font-weight: bold;
     font-style: italic;
-    text-decoration: underline;
     &:visited { color: $orange; }
-    &:hover { color: lighten($orange, 15%); }
-    &:active { color: darken($orange, 15%); }
+    &:hover { color: darken($orange, 10); }
+    &:active { color: darken($orange, 20); }
   } // .latest-news--more
 
 } // .s-latest-news
