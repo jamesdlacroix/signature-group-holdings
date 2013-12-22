@@ -4,8 +4,8 @@
     border-bottom: 1px solid;
     color: $orange;
     &:visited { color: $orange; }
-    &:hover { color: darken($orange, 10); }
-    &:active { color: darken($orange, 20); }
+    &:hover   { color: darken($orange, 10); }
+    &:active  { color: darken($orange, 20); }
   }
 
   .page-featured {

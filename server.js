@@ -15,6 +15,7 @@ if (cluster.isMaster && !module.parent) {
   var express  = require('express')
     , http     = require('http')
     , path     = require('path')
+    , helpers  = require('./lib/helpers')
     ;
 
   var app = module.exports = express();
@@ -46,14 +47,14 @@ if (cluster.isMaster && !module.parent) {
     });
   }
 
+  // global helpers
+  app.use(helpers('Signature Group Holdings'));
+  app.locals.errors  = {};
+  app.locals.message = {};
+
   // include any custom middleware before this app.router
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(app.router);
-
-  // global helpers
-  require('./lib/helpers')(app);
-  app.locals.errors  = {};
-  app.locals.message = {};
 
   // routes
   require('./config/routes')(app);

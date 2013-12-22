@@ -6,24 +6,25 @@ $typeface-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lu
 // Type Sizing
 $basefontsize: 16;
 $baselineheight: 1.5em;
-$gutterwidth : 1.5em;
+$gutterwidth: 1.5em;
 
 // Mixins
 
-@mixin font-size($font-size: 16){
-font-size : #{$font-size}px;
+@mixin font-size($font-size: 16) {
+  font-size: #{$font-size}px;
 }
 
 @mixin css-hyphens($val:auto) {
--webkit-hyphens : $val;
--moz-hyphens : $val;
--ms-hyphens : $val;
--o-hyphens : $val;
-hyphens : $val; }
+  -webkit-hyphens: $val;
+  -moz-hyphens: $val;
+  -ms-hyphens: $val;
+  -o-hyphens: $val;
+  hyphens: $val;
+}
 
 @mixin smallcaps($color, $font-weight) {
-font-variant : small-caps;
-font-weight : $font-weight;
-text-transform : lowercase;
-color : $color; }
-
+  font-variant: small-caps;
+  font-weight: $font-weight;
+  text-transform: lowercase;
+  color: $color;
+}

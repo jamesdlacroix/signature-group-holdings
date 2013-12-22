@@ -5,9 +5,13 @@
   font-size: 1.25em;
   text-transform: uppercase;
 
-  li a{
+  li a {
     display: block;
     border-bottom: 1px solid $light-grey;
+  }
+
+  li a.is-active {
+    // background: blue;
   }
 
 } // .m-sidebar-nav

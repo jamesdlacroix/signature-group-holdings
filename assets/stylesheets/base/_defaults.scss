@@ -14,16 +14,17 @@ p, a, h1, h2, h3, h4, h5, label {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin : 0;
-  font-family : inherit;
-  color : $black;
-  text-rendering : optimizelegibility;
+  margin: 0;
+  font-family: inherit;
+  color: $black;
+  text-rendering: optimizelegibility;
 
   small {
-  font-weight : normal;
-  line-height : 1;
-  color : $grey;
+    font-weight: normal;
+    line-height: 1;
+    color: $grey;
   }
+
 } // h1, h2, h3, h4, h5, h6
 
 h1 {
@@ -47,9 +48,9 @@ h3 {
 }
 
 h4 {
-@include font-size($basefontsize * 1.25);
-line-height: 1.25;
-margin-bottom: $baselineheight;
+  @include font-size($basefontsize * 1.25);
+  line-height: 1.25;
+  margin-bottom: $baselineheight;
 }
 
 h5 {
@@ -60,15 +61,15 @@ h5 {
 h6 {
   @include font-size($basefontsize);
   margin-bottom: $baselineheight;
-  font-weight : normal;
-  letter-spacing : 1px;
-  text-transform : uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 p, ol, ul, dl, address {
-  margin-bottom : $baselineheight;
+  margin-bottom: $baselineheight;
   @include font-size($basefontsize);
-  line-height : $baselineheight;
+  line-height: $baselineheight;
 }
 
 small {
@@ -76,147 +77,147 @@ small {
 }
 
 ul, ol {
-  margin : 0 0 $baselineheight #{-$gutterwidth};
-  padding : 0 0 0 $gutterwidth;
+  margin: 0 0 $baselineheight #{-$gutterwidth};
+  padding: 0 0 0 $gutterwidth;
 }
 
 li ul, li ol {
-  list-style-type : none;
-  margin : $baselineheight 0;
+  list-style-type: none;
+  margin: $baselineheight 0;
   @include font-size(16);
 }
 
 ul.inline, ol.inline {
-  list-style-type : none;
-  margin-left : 0;
+  list-style-type: none;
+  margin-left: 0;
   & > li {
-    display : inline-block;
-    padding-left : $gutterwidth / 2;
-    padding-right : $gutterwidth / 2;
+    display: inline-block;
+    padding-left: $gutterwidth / 2;
+    padding-right: $gutterwidth / 2;
   }
 } //ul.inline, ol.inline
 
 
 blockquote  {
-  margin : 0 0 $baselineheight 0;
-  padding : $gutterwidth / 2;
-  background-color : $light-grey;
-  font-style : normal;
+  margin: 0 0 $baselineheight 0;
+  padding: $gutterwidth / 2;
+  background-color: $light-grey;
+  font-style: normal;
 
   small {
   &:before {
-  content : '\00A0 \2014';
+  content: '\00A0 \2014';
   }
 
   &:after {
-  content : ''; }
+  content: ''; }
   }
 
   &.pull-right {
-  float : right;
-  background-color : transparent;
+  float: right;
+  background-color: transparent;
 
   p, small {
-  text-align : right;
+  text-align: right;
   }
 
   small {
     &:before {
-    content : '';
+    content: '';
   }
 
   &:after {
-    content : '\00A0 \2014'; }
+    content: '\00A0 \2014'; }
   }
 
 } // blockquote
 
 cite {
-  font-style : normal; }
+  font-style: normal; }
 }
 
 q {
-  quotes : none; }
+  quotes: none; }
 
   blockquote:before,
   blockquote:after,
   q:before,
   q:after {
-  content : '';
-  content : none;
+  content: '';
+  content: none;
 }
 
 dl, dd {
-  margin-bottom : $baselineheight;
+  margin-bottom: $baselineheight;
 }
 
 dt {
-  font-weight : bold;
+  font-weight: bold;
 }
 
 .dl-horizontal {
   @include clearfix;
 
 dt {
-  float : left;
-  clear : left;
-  width : 30.38869258%;
+  float: left;
+  clear: left;
+  width: 30.38869258%;
 }
 
 dd {
-  margin-left : 32.99289258%; }
+  margin-left: 32.99289258%; }
 }
 
 abbr[title] {
-  border-bottom : 1px dotted;
-  cursor : help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 b, strong {
-  font-weight : bold;
+  font-weight: bold;
 }
 
 dfn {
-  font-style : italic;
+  font-style: italic;
 }
 
 ins {
-  background-color : $white;
-  color : $black;
-  text-decoration : none;
+  background-color: $white;
+  color: $black;
+  text-decoration: none;
 }
 
 mark {
-  background-color : $white;
-  color : $black;
-  font-style : italic;
-  font-weight : bold;
+  background-color: $white;
+  color: $black;
+  font-style: italic;
+  font-weight: bold;
 }
 
 pre, code, kbd, samp {
-  font-family : $typeface-code;
+  font-family: $typeface-code;
   @include font-size($basefontsize / 1.25);
-  line-height : $baselineheight;
-  color : lighten($black,.50%);
+  line-height: $baselineheight;
+  color: lighten($black,.50%);
 }
 
 pre {
-  white-space : pre;
-  white-space : pre-wrap;
-  word-wrap : break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 sub, sup {
-  position : relative;
+  position: relative;
   @include font-size($basefontsize / 1.25);
-  line-height : 0;
-  vertical-align : baselineheight;
+  line-height: 0;
+  vertical-align: baselineheight;
 }
 
 sup {
-  top : -.5em;
+  top: -.5em;
 }
 
 sub {
-  bottom : -.25em;
+  bottom: -.25em;
 }
