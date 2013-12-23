@@ -2,7 +2,8 @@
   .l-constrained
 
     .header--logo
-      img(src=assets.url('/images/logo.png'))
+      a(href='/')
+        img(src=assets.url('/images/logo.png'))
 
     nav.header--menu
 
@@ -19,14 +20,14 @@
 
       ul.header--nav
         li
-          a(href="/", class=isActive('/')) Home
+          a(href='/', class=isActive('/')) Home
         li
-          a(href="/about/overview", class=isActive('/about/overview')+isActive('/about/nabco')) About
+          a(href='/about/overview', class=isActive('/about/overview')+isActive('/about/nabco')) About
         li
-          a(href="#") Vision
+          a(href='/opportunities/acquisitions', class=isActive('/opportunities/acquisitions')+isActive('/opportunities/financing')) Opportunities
         li
-          a(href="#") Resources
+          a(href='/resources/press', class=isActive('/resources/press')+isActive('/resources/stock-information')+isActive('/resources/sec-filings')+isActive('/resources/interactive-data')+isActive('/resources/faq')) Resources
         li
-          a(href="#") Governance
+          a(href='/governance/board', class=isActive('/governance/board')+isActive('/governance/documents')+isActive('/governance/composition')) Governance
         li
-          a(href="#") News
+          a(href="/news", class=isActive('/news')+isActive('news/post')) News

@@ -1,9 +1,10 @@
 .s-intro {
-  padding: 12em 0;
+  padding: 10em 0;
   background-image: image-url("bg1.jpg");
 
   .intro--statement-wrap {
     border: 1em solid rgba($black, 0.375);
+    margin-bottom: 4em;
   }
 
   .intro--statement {
@@ -12,6 +13,7 @@
   }
 
   h1 {
+    margin-bottom: 0;
     color: $white;
     font-size: 3em;
     font-family: $typeface-serif;
@@ -29,9 +31,6 @@
   }
 
   .intro--icon {
-    position: absolute;
-    bottom: 4em;
-    width: 100%;
     text-align: center;
   }
 

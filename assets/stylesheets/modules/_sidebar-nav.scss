@@ -9,6 +9,7 @@ $orange: desaturate(#ff530d, 15);
   text-transform: uppercase;
   border-bottom: 1px solid $light-grey;
 
+
   a {
     display: block;
     border-left-width: $border-size;
@@ -17,6 +18,7 @@ $orange: desaturate(#ff530d, 15);
 
   li {
     margin-bottom: 0;
+    line-height: 1;
   }
 
   li a {
