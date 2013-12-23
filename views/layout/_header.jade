@@ -8,20 +8,20 @@
 
       ul.header--social
         li
-          a(href="https://www.twitter.com", target="_blank")
+          a(href='https://www.twitter.com', target='_blank')
             +icon("49d")
         li
-          a(href="https://www.facebook.com.com", target="_blank")
+          a(href='https://www.facebook.com.com', target='_blank')
             +icon("499")
         li
-          a(href="mailto:invrel@signaturegroupholdings.com")
-            +icon("48f")
+          a(href='mailto:invrel@signaturegroupholdings.com')
+            +icon('48f')
 
       ul.header--nav
         li
-          a(href="#") Home
+          a(href="/", class=isActive('/')) Home
         li
-          a(href="#") About
+          a(href="/about/overview", class=isActive('/about/overview')+isActive('/about/nabco')) About
         li
           a(href="#") Vision
         li

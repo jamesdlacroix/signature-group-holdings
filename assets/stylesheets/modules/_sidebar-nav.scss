@@ -1,17 +1,52 @@
+$border-size: 0.25em;
+$orange: desaturate(#ff530d, 15);
+
 .m-sidebar-nav {
   @include unstyled-list;
   padding: 0;
   font-family: $typeface-sans;
   font-size: 1.25em;
   text-transform: uppercase;
+  border-bottom: 1px solid $light-grey;
+
+  a {
+    display: block;
+    border-left-width: $border-size;
+    border-left-style: solid;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
 
   li a {
-    display: block;
-    border-bottom: 1px solid $light-grey;
+      padding: 0.75em;
+      border-color: $light-grey;
+      border-bottom: none;
+      background: darken($off-white, 2.5);
+      color: $dark-grey;
+  }
+
+  li a:visited {
+    color: $dark-grey;
+  }
+
+  li a:hover {
+      background: darken($off-white, 5);
+      color: $orange;
+      border-color: $orange;
+  }
+
+  li a.active {
+      border-color: darken($orange, 10);
+      background: darken($off-white, 7.5);
+      color: darken($orange, 10);
   }
 
   li a.is-active {
-    // background: blue;
+      border-color: $orange;
+      background: darken($off-white, 5);
+      color: $orange;
   }
 
 } // .m-sidebar-nav

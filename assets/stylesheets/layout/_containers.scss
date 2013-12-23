@@ -2,12 +2,14 @@
 
 .l-constrained {
   @include outer-container;
+  min-width: 48em;
   padding: 0 $page-gutter;
 }
 
 .l-constrained-medium {
   @include outer-container;
   max-width: 50em;
+  min-width: 48em;
   padding: 0 $page-gutter;
   margin: auto;
 }

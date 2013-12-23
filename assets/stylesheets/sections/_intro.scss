@@ -1,8 +1,9 @@
 .s-intro {
-  padding: 10em 0;
+  padding: 12em 0;
   background-image: image-url("bg1.jpg");
 
   .intro--statement-wrap {
+    border: 1em solid rgba($black, 0.375);
   }
 
   .intro--statement {
@@ -10,11 +11,20 @@
     background: rgba($black, 0.65);
   }
 
-  h3 {
+  h1 {
     color: $white;
     font-size: 3em;
+    font-family: $typeface-serif;
     font-weight: 300;
     line-height: 1.25;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    color: $light-grey;
+    font-style: italic;
+    font-weight: 300;
     text-align: center;
   }
 
