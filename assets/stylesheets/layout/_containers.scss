@@ -2,7 +2,7 @@
 
 .l-constrained {
   @include outer-container;
-  min-width: 50em;
+  min-width: 48em;
   padding: 0 $page-gutter;
 }
 
