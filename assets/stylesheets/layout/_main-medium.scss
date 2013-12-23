@@ -1,0 +1,4 @@
+.l-main-medium {
+  @include span-columns(8);
+    @include shift(2);
+} // .l-main-medium

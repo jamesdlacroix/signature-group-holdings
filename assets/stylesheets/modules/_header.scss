@@ -46,6 +46,11 @@
     font-family: $typeface-sans;
     font-weight: bold;
     text-transform: uppercase;
+
+    a:hover, a:active {
+      border-bottom: 2px solid;
+    }
+
   }
 
 } // #header

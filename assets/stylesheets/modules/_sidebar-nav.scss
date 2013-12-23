@@ -5,7 +5,7 @@ $orange: desaturate(#ff530d, 15);
   @include unstyled-list;
   padding: 0;
   font-family: $typeface-sans;
-  font-size: 1.25em;
+  font-size: 1em;
   text-transform: uppercase;
   border-bottom: 1px solid $light-grey;
 
@@ -22,7 +22,7 @@ $orange: desaturate(#ff530d, 15);
   }
 
   li a {
-      padding: 0.75em;
+      padding: 0.75em 1em;
       border-color: $light-grey;
       border-bottom: none;
       background: darken($off-white, 2.5);

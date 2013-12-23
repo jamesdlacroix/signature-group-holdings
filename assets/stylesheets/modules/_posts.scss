@@ -1,9 +1,4 @@
-.s-latest-news {
-  background-image: image-url("bg4.jpg");
-
-  article {
-    padding: 0.5em 0;
-  }
+.m-posts {
 
   time {
     color: grey;
@@ -11,8 +6,16 @@
   }
 
   h2 {
+    margin-bottom: 0;
     font-size: 1.25em;
+
+    a { border: none; }
+
   }
+
+    p {
+      font-size: 1.125em;
+    }
 
   a {
     color: $black;
@@ -21,7 +24,7 @@
     &:hover { color: darken($blue, 15%); }
   }
 
-  .latest-news--more {
+  .posts--more {
     display: inline-block;
     margin-top: 2em;
     border-bottom: 1px solid;
@@ -31,7 +34,21 @@
     font-style: italic;
     &:visited { color: $orange; }
     &:hover { color: darken($orange, 10); }
-    &:active { color: darken($orange, 20); }
-  } // .latest-news--more
+    &:active { color: darken (orange, 20); }
+  }
 
-} // .s-latest-news
+  .posts--article {
+    margin-bottom: 2em;
+  }
+
+  .posts--article-header {
+    margin-bottom: 2em;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+
+  } //.posts--single
+
+} // .posts

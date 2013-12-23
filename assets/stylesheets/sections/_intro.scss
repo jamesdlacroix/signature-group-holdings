@@ -1,14 +1,16 @@
 .s-intro {
   padding: 10em 0;
-  background-image: image-url("bg1.jpg");
 
   .intro--statement-wrap {
+    border: 1em solid $dark-grey;
     border: 1em solid rgba($black, 0.375);
     margin-bottom: 4em;
   }
 
   .intro--statement {
     padding: 4em;
+    border: 1px solid rgba($black, 0.03125);
+    background: $black;
     background: rgba($black, 0.65);
   }
 

@@ -2,7 +2,7 @@ extends ../layout/app
 
 block content
 
-  section#intro.m-section.s-intro
+  section#intro.m-section.s-home-bg1.s-intro
     .l-constrained
       .l-constrained-medium
         .intro--statement-wrap
@@ -13,7 +13,7 @@ block content
               a.m-icon-effect(href="#description1")
                 +icon("3b2")
 
-  section#description1.m-section.m-section-padding.s-description1
+  section#description1.m-section.m-section-padding.s-home-bg2
     .m-section-content
       .l-constrained
         .l-constrained-medium
@@ -22,7 +22,7 @@ block content
           a.m-icon-effect(href="#description2")
             +icon("3b2")
 
-  section#description2.m-section.m-section-padding.s-description2
+  section#description2.m-section.m-section-padding.s-home-bg3
     .m-section-content
       .l-constrained
         .l-constrained-medium
@@ -31,23 +31,23 @@ block content
           a.m-icon-effect(href="#latest-news")
             +icon("3b2")
 
-  section#latest-news.m-section.m-section-padding.s-latest-news
+  section#latest-news.m-section.m-section-padding.m-posts.s-home-bg4
     .m-section-content
       .l-constrained
         .l-constrained-medium
           h1 Latest News
 
-          article
-            time 08/01/13
+          article.posts--article
+            time 12/09/13
             h2
-              a(href="#") Signature Group Holdings, Inc. Reports Second Quarter 2013 Results
-          article
-            time 07/18/13
+              a(href="news/single-article") Signature Group Holdings, Inc. Reports Second Quarter 2013 Results
+          article.posts--article
+            time 12/09/13
             h2
-              a(href="#") Signature Group Holdings Announces 2013 Annual Meeting Results
-          article
-            time 06/05/13
+              a(href="/news/single-article") Signature Group Holdings, Inc. Reports Second Quarter 2013 Results
+          article.posts--article
+            time 12/09/13
             h2
-              a(href="#") Signature Group Holdings Announces Settlement Agreement with New Signature LLC
+              a(href="/news/single-article") Signature Group Holdings, Inc. Reports Second Quarter 2013 Results
 
-          a.latest-news--more(href="#") Read More News
+          a.posts--more(href="/news") Read More News

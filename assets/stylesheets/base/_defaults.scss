@@ -87,17 +87,6 @@ li ul, li ol {
   @include font-size(16);
 }
 
-ul.inline, ol.inline {
-  list-style-type: none;
-  margin-left: 0;
-  & > li {
-    display: inline-block;
-    padding-left: $gutterwidth / 2;
-    padding-right: $gutterwidth / 2;
-  }
-} //ul.inline, ol.inline
-
-
 blockquote  {
   margin: 0 0 $baselineheight 0;
   padding: $gutterwidth / 2;

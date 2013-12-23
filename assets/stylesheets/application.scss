@@ -21,6 +21,7 @@
 @import "layout/containers";
 @import "layout/page";
 @import "layout/main";
+@import "layout/main-medium";
 @import "layout/sidebar";
 
 // Modules
@@ -30,12 +31,13 @@
 @import "modules/page";
 @import "modules/header";
 @import "modules/footer";
+@import "modules/posts";
+@import "modules/home-bg";
+
 
 
 // Sections
 @import "sections/intro";
-@import "sections/description";
 @import "sections/direction";
-@import "sections/latest-news";
 
 // States
