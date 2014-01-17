@@ -1,14 +1,14 @@
 .s-intro {
-  padding: 10em 0;
+  padding: 11em 0;
 
   .intro--statement-wrap {
-    border: 1em solid $dark-grey;
-    border: 1em solid rgba($black, 0.375);
+    border: 0.75em solid $dark-grey;
+    border: 0.75em solid rgba($black, 0.375);
     margin-bottom: 4em;
   }
 
   .intro--statement {
-    padding: 4em;
+    padding: 3em;
     border: 1px solid rgba($black, 0.03125);
     background: $black;
     background: rgba($black, 0.65);
